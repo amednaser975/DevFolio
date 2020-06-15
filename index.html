@@ -27,22 +27,22 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarDefault">
                         <ul class="navbar-nav ml-auto text-uppercase">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#" data-scroll="home">Home</a>
+                                <a class="nav-link active2" href="#home" data-scroll="home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll="about">About</a>
+                                <a class="nav-link" href="#about" data-scroll="about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll="services">Services</a>
+                                <a class="nav-link" href="#services" data-scroll="services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll="work">Work</a>
+                                <a class="nav-link" href="#work" data-scroll="work">Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll="blog">Blog</a>
+                                <a class="nav-link" href="#blog" data-scroll="blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll="contact-footer">Contact</a>
+                                <a class="nav-link" href="#contact-footer" data-scroll="contact-footer">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -216,7 +216,7 @@
         </section>
         <!-- End Services -->
         <!-- Start Acheivements -->
-        <section class="acheivements text-center">
+        <section class="acheivements text-center" id="acheivements">
             <div class="overlay2"></div>
             <div class="container">
                 <div class="row">
@@ -228,7 +228,7 @@
                                 </span>
                             </div>
                             <div class="acheiv-info">
-                                <h4>450</h4>
+                                <h4 id="first">0</h4>
                                 <span>WORKS COMPLETED</span>
                             </div>
                         </div>
@@ -241,7 +241,7 @@
                                 </span>
                             </div>
                             <div class="acheiv-info">
-                                <h4>15</h4>
+                                <h4 id="second">0</h4>
                                 <span>YEARS OF EXPERIENCE</span>
                             </div>
                         </div>
@@ -254,7 +254,7 @@
                                 </span>
                             </div>
                             <div class="acheiv-info">
-                                <h4>550</h4>
+                                <h4 id="third">0</h4>
                                 <span>TOTAL CLIENTS</span>
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                                 </span>
                             </div>
                             <div class="acheiv-info">
-                                <h4>36</h4>
+                                <h4 id="fourth">0</h4>
                                 <span>AWARD WON</span>
                             </div>
                         </div>
@@ -412,6 +412,15 @@
                 </div>
             </div>
         </section>
+        <div id="lightbox-container" class=" justify-content-center align-items-center">
+         
+            <div id="lightbox-item" class="d-flex align-items-center justify-content-between">
+      
+                <i id="close" class="far fa-times-circle"></i>
+                <i id="prev" class="far m-2 fa-arrow-alt-circle-left"></i>
+                <i id="next" class="far m-2 fa-arrow-alt-circle-right"></i>
+            </div>
+          </div>
         <!-- End Portfolio -->
         <!-- Start Testimonials -->
         <section class="testimonials">
@@ -646,8 +655,7 @@
             <i class="fa fa-chevron-up"></i>
         </a>
         <!-- End Scroll To Top button -->
-        <a href=""></a>
-        <script src="js/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/jquery-3.5.0.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/main.js"></script>

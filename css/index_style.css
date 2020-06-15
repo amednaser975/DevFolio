@@ -49,7 +49,16 @@ body
     padding: 0 10px;
     position: relative;
 }
-.navbar .navbar-collapse ul li a::before
+.navbar .navbar-collapse ul li a
+{
+    border-bottom: 0 solid #fff;
+    transition: border .3s ease;
+}
+.navbar .navbar-collapse ul li a.active2
+{
+    border-bottom-width: 2px;
+}
+/* .navbar .navbar-collapse ul li a::before
 {
     content: "";
     position: absolute;
@@ -59,19 +68,19 @@ body
     left: 18px;
     transition: all .5s ease-in-out;
 }
-.navbar .navbar-collapse ul li a:hover::before
+.navbar .navbar-collapse ul li a::before
 {
-    width: 35px;
-}
-.navbar .navbar-collapse ul li a.active::before
-{
+    width: 0;
     content: "";
     position: absolute;
-    width: 35px;
     height: 2px;
     top: 40px;
     left: 18px;
-    background-color: #FFF;
+    background-color: rgb(0, 120, 255);
+} */
+.navbar .navbar-collapse ul li a:hover 
+{
+    border-bottom-width: 2px;
 }
 @media (min-width: 0) and (max-width:768px)
 {
@@ -554,6 +563,37 @@ body
     border: 1px solid #0078ff;
 }
 
+
+#lightbox-container
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+#lightbox-item
+{
+    width: 50%;
+    height: 70vh;
+    background-image: url(../images/portfolio-2.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+#prev , #next , #close
+{
+    font-size: 20px;
+    cursor: pointer;
+}
+#close
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 /* End Portfolio */
 
 /* Start Testimonials */
