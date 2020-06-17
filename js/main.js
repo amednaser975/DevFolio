@@ -37,6 +37,25 @@ $(function() {
     }
   });
 
+  // Toggler Button
+  $('#togglerBtn').on('click', function () {
+
+    $(".navbar").css({
+      backgroundColor: "#FFF",
+      boxShadow: "0px 6px 9px 0px rgba(0,0,0,.1)"
+    });
+    // $(".navbar .navbar-collapse ul li a::before").css("color", "#0078ff"); //Don't Work
+    $(".navbar-brand,.navbar-collapse ul li a").css("color", "#0078ff");
+    $(".navbar-toggler span").css("backgroundColor", "#1B1B1B");
+    $('.navbar .navbar-collapse ul li a').css('borderColor', "#0078ff");
+  })
+  if(window.innerWidth < 992)
+  {
+    $('.nav-item').on('click', function () {
+
+      $('#navbarDefault').removeClass('show');
+    })
+  }
   // Scroll To Top button
   var scrollToTop = $(".back-to-top");
   $(window).scroll(function() {
